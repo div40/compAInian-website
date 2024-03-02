@@ -25,20 +25,20 @@ const Hero = () => {
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
-          <h1 className="h1 mb-6">
+          <h1 className="mb-6 h1">
             Explore the Possibilities of&nbsp;AI&nbsp; with{" "}
-            <span className="inline-block relative">
+            <span className="relative inline-block">
               CompAInion{" "}
               <img
                 src={curve}
                 alt="curve"
-                className="absolute top-full left-0 w-full xl:-mt-2"
+                className="absolute left-0 w-full top-full xl:-mt-2"
                 width={624}
                 height={28}
               />
             </span>
           </h1>
-          <p className="body-1 max-w--3xl mx-auto mb-6 text-n-2 lg:mb-8">
+          <p className="mx-auto mb-6 body-1 max-w--3xl text-n-2 lg:mb-8">
             Unleash the power of AI within CompAInion. Upgrade your productivity
             with CompAInion, the open AI chat app.
           </p>
@@ -58,9 +58,7 @@ const Hero = () => {
                   width={1024}
                   height={490}
                 />
-                <ScrollParallax isAbsolutelyPositioned>
-                  <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
-                </ScrollParallax>
+                <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
                 <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
@@ -92,7 +90,7 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
-        <Logos className="hidden relative z-10 mt-20 lg:block" />
+        <Logos className="relative z-10 hidden mt-20 lg:block" />
       </div>
       <BottomLine />
     </Section>
