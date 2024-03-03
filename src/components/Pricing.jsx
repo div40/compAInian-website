@@ -28,7 +28,7 @@ const Pricing = () => {
         </div>
         <Heading
           tag="Get started with CompAInion"
-          title="Pay once use forever"
+          title="Pay once, use forever"
         />
 
         <div className="relative">
